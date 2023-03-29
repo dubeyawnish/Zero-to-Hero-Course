@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="any_backend_code">
+        <div>
+            <!--label is used to in inputbox -->
+            <label for="stud_name">Student name:</label>
+            <input id="stud_name" type="text" name="stud_name" placeholder="Enter your name">
+        </div>
+        <br>
+        <div>
+            <label for="stud_age">Student age:</label>
+            <input id="stud_age" type="number" name="stud_age" placeholder="Enter your age">
+        </div>
+        <br>
+        <div>
+            <label for="stud_email">Email:</label>
+             <input id ="stud_email"type="email" name="stud_email">
+            <input type="range">
+        </div>
+        <br>
+        <div>
+            <label for="">Gender: </label>
+            Male <input type="radio" name="stud_gender">
+            Female <input type="radio" name="stud_gender">
+            Other <input type="radio" name="stud_gender">
+        </div>
+        <br>
+        <div>
+            Are you 18 years old: <input type="checkbox" name="stud_eligibility">
+        </div>
+        <br>
+        <div>
+            Date of birth: <input type="date" name="stud_dob">
+        </div>
+        <br>
+        <div>
+            Password:
+            <label for="stud_password"></label>
+            <input id="stud_password" type="password" name="stud_password">
+        </div>
+        <br>
+        <div>
+            <label for="stud_edu_desc">  Education description:</label>
+           <br> <textarea id="stud_edu_desc" name="stud_edu_desc" cols="60" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            Qualification:
+            <select name="st_qualification">
+                <option value="Graduate">Graduate</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="12+">12+</option>
+                <option value="10+">10+</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit form">
+            <input type="reset" value="Reset form">
+        </div>
+    </form>
+</body>
+
+</html>
