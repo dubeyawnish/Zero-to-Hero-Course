@@ -6,7 +6,7 @@ body{
 }
 .header::before{/*place this pseudo element before the menu*/
     content: "";/*place empty contnet and put image as background */
-    background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/8/8a/Blank_Park_Zoo_Entrance.jpg') no-repeat center center/cover;
     position: absolute;/*align according to the document from top and left 0 0*/
     top: 0;
     left: 0px;
