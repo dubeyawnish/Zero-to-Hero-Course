@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Parameter es 6</title>
+</head>
+
+<body>
+    <h1>Default Parameter in ES-6</h1>
+
+    <script>
+        //ES6
+        let calculateArea1 = function (height = 100, width = 50) {
+            // logic
+        }
+
+        //ES5
+        var calculateArea2 = function (height, width) {
+            height = height || 50;
+            width = width || 80;
+            // logic
+        }
+
+    </script>
+</body>
+
+</html>
