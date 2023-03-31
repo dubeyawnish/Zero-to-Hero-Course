@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>optional chaining es 6</title>
+</head>
+
+<body>
+    <h1>Optional chaining in ES-6</h1>
+
+    <script>
+        let emp = {
+            contact: {
+                mobile: 12234455,
+                email: 'abc@h.com'
+            },
+            address: {
+                street: 'abc',
+                city: 'xyz'
+            }
+        }
+        console.log("&&&&&&&&&&&&&&&&&&&&&&&&");
+        console.log(emp.contact.mobile);//program stops if contact object does not exist
+        console.log(emp?.contact?.mobile);//program continues even if contact object is not present
+
+    </script>
+</body>
+
+</html>
