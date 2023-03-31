@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator in ES-6</title>
+</head>
+
+<body>
+
+    <h1>Speread Operator in ES-6</h1>
+    <script>
+
+        let names = ['Ram', 'Shyam', 'Ravi'];
+
+        //names.push('Sanjeev');
+        names = [...names, 'Sanjeev', 'Peter'];
+        //console.log(names);
+
+        let empArr = [
+            {
+                id: 111,
+                name: 'John',
+                age: 34
+            },
+            {
+                id: 222,
+                name: 'Peter',
+                age: 26
+            },
+            {
+                id: 333,
+                name: 'Ram',
+                age: 19
+            }
+        ];
+
+        empArr = [...empArr, { id: 444, name: 'Lizzy', age: 25 }];
+//console.log(empArr);
+
+    </script>
+</body>
+
+</html>
