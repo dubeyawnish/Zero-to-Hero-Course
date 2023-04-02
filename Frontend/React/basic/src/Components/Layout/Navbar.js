@@ -1,4 +1,5 @@
-import{NavLink} from 'react-router-dom'
+import{Link, NavLink} from 'react-router-dom'
+import{Button}  from "react-bootstrap";
 
 const Navbar = () => {
     return (
@@ -23,6 +24,7 @@ const Navbar = () => {
                     </ul>
                     
                 </div>
+               <Link to="/user/add"><Button variant="light">Add User</Button></Link> 
             </div>
         </nav>
     )
