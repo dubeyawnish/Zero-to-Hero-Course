@@ -1,4 +1,5 @@
-import Homepage from './Components/pages/Homepage';
+
+import Homepage from './Components/pages/Homepage'
 import './App.css';
 import Aboutpage from './Components/pages/Aboutpage';
 import Contactpage from './Components/pages/Contactpage';
