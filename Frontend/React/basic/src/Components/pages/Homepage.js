@@ -39,6 +39,11 @@ const Homepage = () => {
 
   }
 
+  const deleteUser= async(userid) =>{
+     await axios.delete(`http://localhost:5000/user/${userid}`);
+     getAllUserAwait();
+  }
+
 
   return (
     <div className="container">
@@ -65,8 +70,8 @@ const Homepage = () => {
                 <td>{user.phone}</td>
                 <td>
                   <Link to=""><Button className='me-2' variant="secondary">View</Button></Link>
-                  <Link to=""><Button className='me-2' variant="info">Edit</Button></Link>
-                  <Link to=""><Button variant="danger">Delete</Button></Link>
+                  <Link to={`/user/edit/${user.id}`}><Button className='me-2' variant="info">Edit</Button></Link>
+                  <Button onClick={()=>{deleteUser(user.id)}} variant="danger">Delete</Button>
                 </td>
               </tr>
 

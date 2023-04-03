@@ -6,6 +6,7 @@ import Navbar from './Components/Layout/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './Components/pages/PageNotFound';
 import Adduser from './Components/User/Adduser';
+import Edituser from './Components/User/Edituser';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/about" element={<Aboutpage />} />
           <Route exact path="/contact" element={<Contactpage />} />
           <Route exact path="/user/add" element={<Adduser />} />
+          <Route exact path="/user/edit/:userid" element={<Edituser />} />                                        {/* it is dynamic routing mechanism because everytime used id value is changes*/}
           <Route path="*" element={<PageNotFound />} />
         </Routes>
 
