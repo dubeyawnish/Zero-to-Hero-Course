@@ -69,7 +69,7 @@ const Homepage = () => {
                 <td>{user.email}</td>
                 <td>{user.phone}</td>
                 <td>
-                  <Link to=""><Button className='me-2' variant="secondary">View</Button></Link>
+                  <Link to={`/user/view/${user.id}`}><Button className='me-2' variant="secondary">View</Button></Link>
                   <Link to={`/user/edit/${user.id}`}><Button className='me-2' variant="info">Edit</Button></Link>
                   <Button onClick={()=>{deleteUser(user.id)}} variant="danger">Delete</Button>
                 </td>
